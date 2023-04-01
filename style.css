@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+  max-width: 1000px;
+  min-height: 1000px;
+  background-color: #e0e1e9;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/*Left Side*/
+.container .leftSide {
+  position: relative;
+  background-color: #b8b8c7;
+  padding: 40px;
+  height: 100%;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile .imgbx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #251f4a;
+}
+
+.profile .imgbx img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.title {
+  margin: 15px 0px;
+  color: #251f4a;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.leftSide hr {
+  height: 7px;
+  margin: 40px 0px;
+  background-color: #e0e1e9;
+}
+
+.social-links li {
+  margin-bottom: 20px;
+}
+
+.social-links a,
+h4 {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.work-reference div {
+  margin-bottom: 20px;
+}
+
+.work-reference p {
+  font-size: smaller;
+}
+
+.languages .percent {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background-color: #e0e1e9;
+  display: block;
+  margin-top: 5px;
+}
+
+.languages .percent div {
+  position: absolute;
+  height: 100%;
+  background: rgb(37, 31, 74);
+  background: linear-gradient(
+    85deg,
+    rgba(37, 31, 74, 1) 30%,
+    rgba(37, 25, 113, 0.7595413165266106) 100%
+  );
+}
+
+.languages .text {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.certification li {
+  margin-bottom: 10px;
+}
+
+/*Right Side*/
+.container .rightSide {
+  position: relative;
+  background-color: #e0e1e9;
+  padding: 40px 45px 40px 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fullName {
+  margin: 50px 0px 30px 0px;
+}
+
+header h2 {
+  text-align: left;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+header p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.contact-details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 5px 0px 10px 100px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.contact-details ul li .icon {
+  width: 30px;
+  font-size: 18px;
+  color: black;
+  margin-right: 10px;
+}
+
+.rightSide hr {
+  height: 7px;
+  margin: 25px 0px;
+  background-color: #251f4a;
+}
+
+.work hr {
+  height: 7px;
+  margin: 5px 0px 20px 0px;
+  background-color: #251f4a;
+}
+
+.experience h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.experience h5 {
+  font-size: 15px;
+}
+
+.experience h6 {
+  font-size: 13px;
+}
+
+.experience .date {
+  float: right;
+  font-size: 14px;
+}
+
+.experience p {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.experience .experience-text {
+  font-weight: lighter;
+  text-align: justify;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.hobbies li,
+.school li,
+.skills li,
+.leftSide ul {
+  list-style: none;
+}
+
+.education ul {
+  margin-bottom: 20px;
+}
+
+.education li h4 {
+  margin-bottom: 0px;
+}
+
+.educ hr {
+  margin-top: 5px;
+}
+
+.hobbies {
+  margin-top: -60px;
+}
+
+.hobbies li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.skills,
+.education {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.profSkills,
+.personalSkills {
+  margin-right: 20%;
+}
+
+.skills .percent {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background-color: #b8b8c7;
+  display: block;
+  margin-top: 5px;
+}
+
+.skills .percent div {
+  position: absolute;
+  height: 100%;
+  background: rgb(37, 31, 74);
+  background: linear-gradient(
+    85deg,
+    rgba(37, 31, 74, 1) 30%,
+    rgba(37, 25, 113, 0.7595413165266106) 100%
+  );
+}
+
+.skills .rate {
+  color: #b8b8c7;
+  text-align: center;
+  font-size: 13px;
+}
+
+.skills .text {
+  font-size: 13px;
+  font-style: italic;
+}
+
+/*Responsiveness*/
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: inline;
+  }
+}
